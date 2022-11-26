@@ -1,0 +1,145 @@
+:root {
+    --darkblue: darkblue;
+    --darkblue-hover: rgb(7, 7, 210);
+    --darkorange: rgb(214, 119, 3);
+    --darkorange-hover: darkorange;
+    --darkred: darkred;
+    --darkred-hover: rgb(191, 10, 10);
+
+    --nav-active-color: var(--darkorange-hover);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: "Trirong", serif;
+}
+
+.container {
+    display: flex;
+}
+
+nav::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    min-height: min-content;
+    height: 100vh;
+    max-height: 100vh;
+
+    position: sticky;
+    top: 0;
+
+    background-color: var(--darkblue);
+
+    box-shadow: 0px 0px 0.25rem 1px gray, 0px 0px 0.25rem 1px gray;
+    overflow-y: scroll;
+}
+
+nav>.avator {
+    align-items: center;
+    justify-content: center;
+
+    padding: .5rem 0px;
+    background-color: white;
+}
+
+nav>.avator>img {
+    width: 3rem;
+
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+nav>.avator>p {
+    color: var(--darkblue);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav>.nav-group>.nav-item-list>.nav-item>a {
+    display: flex;
+    align-items: center;
+
+    gap: 1.5rem;
+    padding: .5rem 3rem .5rem 1rem;
+
+    text-decoration: none;
+    color: white;
+}
+
+nav>.nav-group>.nav-item-list>.nav-item>a.active {
+    pointer-events: none;
+    background-color: var(--nav-active-color);
+}
+
+nav>.nav-group>.nav-item-list>.nav-item>a>i {
+    font-size: 1.2rem;
+}
+
+nav>.nav-group>.nav-item-list>.nav-item>a>span {
+    font-weight: bold;
+    font-size: small;
+}
+
+nav>.nav-group>.nav-item-list>.nav-item>a:hover {
+    background-color: white;
+    color: var(--darkblue);
+}
+
+.nav-separater {
+    margin: 1rem 0px;
+    border-bottom: 1px solid white;
+    box-shadow: 0px 1px 1rem white;
+}
+
+.m-t-1rem {
+    margin-top: 1rem;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    /* min-height: min-content; */
+    height: 100vh;
+    /* max-height: 100vh; */
+    padding: 0 3rem;
+
+    overflow: scroll;
+}
+
+.d-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.d-flex-overflow-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-gap-1rem {
+    gap: 1rem;
+}
+
+.text-white {
+    color: white;
+}

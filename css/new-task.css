@@ -1,0 +1,58 @@
+.task-title {
+    margin: 1rem 0px;
+}
+
+.task-title>input {
+    border: 0;
+    outline: 0;
+    font-size: 2rem;
+    pointer-events: none;
+}
+
+.form-group>.form-text-bold {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: .5rem 0px;
+}
+
+.form-group>input,
+.form-group>textarea {
+    font-size: 1.025rem;
+    padding: .5rem .75rem;
+
+    border: 1px solid gray;
+    outline: 0px;
+    border-radius: .5rem;
+}
+
+.form-group>input:focus,
+.form-group>textarea:focus {
+    outline: 1.5px inset #3c3c3c;
+}
+
+.form-group>select {
+    font-size: 1.025rem;
+    padding: .5rem .75rem;
+
+    border: 1px solid gray;
+    outline: 0px;
+    border-radius: .5rem;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    background-image: url('../img/select-icon.png');
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position: calc(100% - .5rem) center;
+}
+
+.bg-create {
+    cursor: pointer;
+    background-color: var(--darkred);
+}
+
+.bg-create:hover {
+    background-color: var(--darkred-hover);
+}
