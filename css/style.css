@@ -9,6 +9,8 @@
     --dark-green-hover: green;
 
     --nav-active-color: var(--darkorange-hover);
+    --shadow-color: gray;
+    --text-white: white;
 }
 
 * {
