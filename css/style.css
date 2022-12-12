@@ -11,6 +11,11 @@
     --nav-active-color: var(--darkorange-hover);
     --shadow-color: gray;
     --text-white: white;
+
+    --focus-red: rgba(255, 0, 0, 0.75);
+
+    --red-shadow-color: rgb(192, 80, 80);
+    --red-border-color: rgb(192, 80, 80);
 }
 
 * {
