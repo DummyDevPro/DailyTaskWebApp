@@ -134,3 +134,65 @@ h1{
 .btn-done:hover {
     background-color: var(--dark-green-hover);
 }
+
+/* Dropdown Btn Start */
+
+.button>div.dropdown {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    background-color: var(--darkred);
+    color: white;
+    border-bottom-left-radius: .25rem;
+}
+
+.button>div.dropdown~a {
+    font-size: small;
+    flex: 1;
+}
+
+.dropdown {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 100%;
+    background-color: var(--darkred);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 6px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: gray;
+}
+
+.flex-button3 {
+    width: 100%;
+    text-align: center;
+    padding: .25rem;
+}
+
+.dropdown:hover .flex-button3 {
+    background-color: gray;
+    border-bottom-left-radius: .25rem;
+}
+/* Dropdown Btn End */
