@@ -5,6 +5,8 @@
     --darkorange-hover: darkorange;
     --darkred: darkred;
     --darkred-hover: rgb(191, 10, 10);
+    --dark-green: darkgreen;
+    --dark-green-hover: green;
 
     --nav-active-color: var(--darkorange-hover);
 }

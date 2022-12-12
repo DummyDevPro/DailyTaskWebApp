@@ -1,22 +1,136 @@
-.box {
-    height: 600px;
+h1{
+    top : sticky;
+
+}
+.coloum {
+    display: flex;
+    justify-content: center;
+    /* height: 700px; */
 }
 
-.bg-red {
-    background-color: red;
+.delay-task {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }
 
-.bg-green {
-    background-color: green;
+.new-task {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }
 
-.bg-blue {
-    background-color: blue;
+.touch-task {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }
 
-.title {
-    position: -webkit-sticky;
-    background-color: bisque;
-    position: sticky;
-    top: 0;
+.unfinish-task {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.fontsize {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.border {
+    width: 1px;
+    background-color:var(--darkblue);
+}
+
+.inside-task {
+    outline: 1px var(--darkblue);
+    border-radius: 5px;
+    gap: 1rem;
+}
+
+.inside-task>h5 {
+    text-align: center;
+}
+
+.inside-task:hover {
+    box-shadow: 0 0 1rem gray;
+}
+
+.body>p {
+    font-size: 13px;
+    text-align: center;
+}
+
+.body {
+    height: 100px;
+}
+
+.inside-task>h5 {
+    border-bottom: 1.3px solid var(--darkblue);
+}
+
+.content {
+    padding: 10px;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.sub-content {
+    border-bottom: 2px solid var(--darkblue);
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.button>a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: small;
+    padding: .25rem 0px;
+}
+
+.button {
+    position: relative;
+    display: flex;
+    flex: 1;
+}
+
+.btn-details{
+
+    background-color: darkblue;
+    flex: 1;
+    border-radius: 0px 0px 0px 5px;
+}
+
+.btn-details:hover {
+    background-color: var(--darkblue-hover);
+    transition: .2s;
+}
+
+.btn-start {
+    background-color: orange;
+    flex: 1;
+    border-radius: 0px 0px 5px 0px;
+}
+
+.btn-start:hover {
+    background-color: var(--darkorange-hover);
+    transition: .2s;
+}
+
+.btn-action {
+    background-color: rgb(132, 28, 28);
+}
+
+.btn-action:hover {
+    background-color: var(--darkred-hover);
+}
+
+.btn-done{
+    background-color: var(--dark-green);
+}
+
+.btn-done:hover {
+    background-color: var(--dark-green-hover);
 }
